@@ -1,0 +1,22 @@
+{
+    "name": "edgewizz/fillup",
+    "description": "testing",
+    "minimum-stability": "dev",
+    "autoload": {
+        "classmap": [
+            "database"
+        ],
+        "psr-4": {
+            "App\\": "app/",
+            "Edgewizz\\Fillup\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Edgewizz\\Fillup\\FillupServiceProvider"
+            ]
+        }
+    },
+    "require": {}
+}
