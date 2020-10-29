@@ -6,3 +6,5 @@ Route::get('greeting', function () {
 });
 
 Route::get('test', 'EdgeWizz\Fillup\Controllers\FillupController@test')->name('test');
+
+Route::post('fmt/store', 'EdgeWizz\Fillup\Controllers\FillupController@store')->name('fmt.fillup.store');
