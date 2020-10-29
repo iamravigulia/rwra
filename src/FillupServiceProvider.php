@@ -3,6 +3,7 @@
 namespace edgewizz\fillup;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Blade;
 
 class FillupServiceProvider extends ServiceProvider
 {
