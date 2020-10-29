@@ -3,6 +3,7 @@
 namespace edgewizz\fillup;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Blade;
 
 class FillupServiceProvider extends ServiceProvider
 {
@@ -26,5 +27,12 @@ class FillupServiceProvider extends ServiceProvider
         // dd($this);
         $this->loadMigrationsFrom(__DIR__.'/migrations');
         $this->loadRoutesFrom(__DIR__.'/routes.php');
+        $this->loadViewsFrom(__DIR__ . '/components', 'fillup');
+        Blade::component('fillup::form.open', 'form.open');
+        // $this->loadViewsFrom(__DIR__ . '/components', 'fillup');
+        // Blade::component('fillup::ques.create', 'ques.create');
+        // $this->loadViewComponentsAs('fillup', [
+        //     'store.blade.php',
+        // ]);
     }
 }

@@ -10,4 +10,10 @@ class FillupController extends Controller
     public function test(){
         dd('hello');
     }
+    public function store(Request $request){
+
+    }
+    public function edit($id, Request $request){
+        
+    }
 }
