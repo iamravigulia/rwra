@@ -29,10 +29,5 @@ class FillupServiceProvider extends ServiceProvider
         $this->loadRoutesFrom(__DIR__.'/routes.php');
         $this->loadViewsFrom(__DIR__ . '/components', 'fillup');
         Blade::component('fillup::form.open', 'form.open');
-        // $this->loadViewsFrom(__DIR__ . '/components', 'fillup');
-        // Blade::component('fillup::ques.create', 'ques.create');
-        // $this->loadViewComponentsAs('fillup', [
-        //     'store.blade.php',
-        // ]);
     }
 }
